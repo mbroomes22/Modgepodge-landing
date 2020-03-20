@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GSAP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!--the nav that will animate out-->
+            <nav>
+                <!--the nav bar that remains at all times-->
+                <div class='nav-closed'>
+                    <h3 class='selector'>Portfolio</h3>
+                    <ul class='nav-links'>
+                        <li class='nav-button selector'>Shop</li>
+                        <li class='selector'>blog</li>
+                        <li class='selector'>contact</li>
+                    </ul>
+                </div>
+                <!--nav bar section that fades in-->
+                <div class="nav-open">
+                    <div class="clothing">
+                        <h2>Clothes</h2>
+                        <ul>
+                            <li><a href='#'>Hats</a></li>
+                            <li><a href='#'>Swimsuit</a></li>
+                            <li><a href='#'>Underwear</a></li>
+                            <li><a href='#'>Misc</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-images">
+                        <img src="./img/mom.jpg" alt="">
+                        <img src="./img/cliff.jpg" alt="">
+                    </div>
+                </div>
+            </nav>
+            <img src="./img/turtle.jpg" alt="" class="cover">
+            <h1 class="cover-date">11/25/2019</h1>
+        </header>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
